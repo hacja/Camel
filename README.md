@@ -9,6 +9,6 @@ Commands:
   help             - Show this help message
   exit             - Exit the program
 
-Created by xinruzhishui666.
+Created by hacja.
 
 Enjoy!
