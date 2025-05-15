@@ -150,6 +150,9 @@ void show_help() {
     printf("  list             - List available enzymes\n");
     printf("  scan <enzyme>    - Scan sequence for enzyme sites\n");
     printf("  help             - Show this help message\n");
+    printf("  clear            - Clear the screen\n");
+    printf("  cls              - Clear the screen\n");
+    printf("  quit             - Exit the program\n");  
     printf("  exit             - Exit the program\n");
 }
 
@@ -173,6 +176,12 @@ int main() {
         } else if (strcmp(line, "help") == 0) {
             show_help();
         } else if (strcmp(line, "exit") == 0) {
+            break;
+        } else if (strcmp(line, "clear") == 0) {        
+            printf("\033[H\033[J"); // ANSI escape code to clear screen
+        } else if (strcmp(line, "cls") == 0) {
+            printf("\033[H\033[J"); // ANSI escape code to clear screen
+        } else if (strcmp(line, "quit") == 0) {
             break;
         } else {
             printf("[!] Unknown command. Type 'help' for a list.\n");
